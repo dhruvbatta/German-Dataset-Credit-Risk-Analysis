@@ -1,0 +1,12 @@
+#By using Random Forest: -
+
+
+library(randomForest)
+rf50 <- randomForest(Creditability ~., data = Train50, ntree=200, importance=T,
+proximity=T)
+plot(rf50, main="")
+rf50
+Test50_rf_pred <- predict(rf50, Test50, type="class")
+table(Test50_rf_pred, Test50$Creditability)
+importance(rf50)
+varImpPlot(rf50, main="", cex=0.8)
