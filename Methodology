@@ -1,0 +1,19 @@
+Methodology / Procedure:-
+There are 1000 rows and 21 columns with each of the column depicting different
+types of data such as creditability, account balance , age, duration of credit and others
+which we need to pre-process in order to use effectively hence we decide which
+parameters are important to determine good credit or bad credit.
+So we Factorize our data
+1) Account Balance: No account (1), None (No balance) (2), Some Balance (3)
+2) Payment Status: Some Problems (1), Paid Up (2), No Problems (in this bank)
+(3)
+3) Savings/Stock Value: None, Below 100 DM, [100, 1000] DM, Above 1000
+DM
+4) Employment Length: Below 1 year (including unemployed), [1, 4), [4, 7),
+Above 7
+5) Sex/Marital Status: Male Divorced/Single, Male Married/Widowed, Female
+6) No of Credits at this bank: 1, More than 1
+7) Guarantor: None, Yes
+8) Concurrent Credits: Other Banks or Dept Stores, None
+9) ForeignWorker variable may be dropped from the study
+10) Purpose of Credit: New car, Used car, Home Related, Other
